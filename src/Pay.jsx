@@ -11,7 +11,15 @@ const Pay = () => {
                 alignItems: "center",
             }}
         >
-            <StripeCheckout name="devHuß">
+            <StripeCheckout
+                name="devHuß"
+                image="https://i.im.ge/2022/07/22/FqdOSC.th.jpg"
+                billingAddress
+                shippingAddress
+                description="Your total is 30€"
+                amount = {30000}
+
+            >
             <button
                 style={{
                     border: "none",
