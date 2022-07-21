@@ -11,6 +11,7 @@ const Pay = () => {
                 alignItems: "center",
             }}
         >
+            <StripeCheckout name="devHuß">
             <button
                 style={{
                     border: "none",
@@ -23,8 +24,9 @@ const Pay = () => {
                     cursor: "pointer",
                 }}
             >
-                Pay Now
+               Pay Now
             </button>
+            </StripeCheckout>
         </div>
     );
 };
