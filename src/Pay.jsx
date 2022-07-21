@@ -1,5 +1,8 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
+const KEY = require(process.env.REACT_APP_S_KEY);
+
+
 
 const Pay = () => {
     return (
@@ -17,7 +20,9 @@ const Pay = () => {
                 billingAddress
                 shippingAddress
                 description="Your total is 30€"
-                amount = {30000}
+                amount={30000}
+                token={onToken}
+                stripeKey={KEY}
 
             >
             <button
