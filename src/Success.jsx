@@ -2,8 +2,29 @@ import React from 'react'
 
 const Success = () => {
   return (
-    <div>Success</div>
-  )
-}
+    <div style={{
+      height: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+    >
+      <button style={{
+                    border: "none",
+                    width: 120,
+                    borderRadius: 5,
+                    padding: "20px",
+                    backgroundColor: "teal",
+                    color: "white",
+                    fontWeight: "600",
+                    cursor: "pointer",
+                }}
+      >Payment Successful
 
-export default Success
+      </button>
+    
+    </div>
+  );
+};
+
+export default Success;
